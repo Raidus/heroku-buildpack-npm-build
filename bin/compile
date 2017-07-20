@@ -10,5 +10,8 @@ source $bp_dir/lib/common.sh
 export_env_dir $env_dir
 cd $build_dir
 
+head "Installing dependencies (makes sure you have all dev dependencies)"
+npm install
+
 head "Running 'npm run build'"
 npm run build
